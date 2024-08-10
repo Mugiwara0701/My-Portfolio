@@ -3,11 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Portfolio - Akshat Nautiyal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css" rel="stylesheet">
 </head>
 <body>
-  <h1>My Portfolio</h1>
-  <script src="./script.js"></script>
+  <div class="container">
+    <nav id="header">
+      <div class="nav-logo">
+        <p class="nav-name">Logo</p>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="#home" class="nav-link active-link">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#about" class="nav-link">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#projects" class="nav-link">Projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#contact" class="nav-link">Contact</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="mode">
+        <div class="moon-sun" id="toggle-switch">
+          <i class="fa fa-moon" id="moon"></i>
+          <i class="fa fa-sun" id="sun"></i>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+    <main class="wrapper">
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="hello">
+            <p>Hello I'm</p>
+          </div>
+          <div class="featured-name">
+            <span class="typedText"></span>
+          </div>
+          <div class="text-info">
+            <p>My name is Akshat! I'm a collage student</p>
+          </div>
+          <div class="text-btn">
+            <button class="btn hire-me">Hire me</button>
+            <button class="btn"><i class="uil uil-file">Download CV</i></button>
+          </div>
+          <div class="social_icons">
+            <div class="icon_circle"></div>
+            <div class="icon"><i class="uil uil-instagram"></i></div>
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon"><i class="uil uil-github-alt"></i></div>
+          </div>
+        </div>
+        <div class="featured-image">
+          <div class="image">
+            <img src="" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <div class="top-header">
+          <h1>About me</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="about-info">
+              <figure class="about-me">
+                <figcaption>
+                  <img src="" alt="profile" />
+                  <h2>Web Developer</h2>
+                  <p>My name is Akshat! I'm a collage student</p>
+              </figure>
+              <button class="about-me-btn">Hire Me</button>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-box">
+              <span class="title">HTML</span>
+                <div class="skill-bar html">
+                  <span class="skill-per">
+                    <span class="tooltop">70%</span>
+                  </span>
+                </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">CSS</span>
+                <div class="skill-bar css">
+                  <span class="skill-per">
+                    <span class="tooltop">70%</span>
+                  </span>
+                </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">Node.js</span>
+                <div class="skill-bar node">
+                  <span class="skill-per">
+                    <span class="tooltop">70%</span>
+                  </span>
+                </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">Postgres</span>
+                <div class="skill-bar sql">
+                  <span class="skill-per">
+                    <span class="tooltop">70%</span>
+                  </span>
+                </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">React</span>
+                <div class="skill-bar react">
+                  <span class="skill-per">
+                    <span class="tooltop">30%</span>
+                  </span>
+                </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">Python</span>
+                <div class="skill-bar python">
+                  <span class="skill-per">
+                    <span class="tooltop">70%</span>
+                  </span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="projects">
+        <div class="top-header">
+          <h1>Projects</h1>
+        </div>
+        <div class="project-container">
+          <div class="project-box">
+            <i class="uil uil-briefcase-alt"></i>
+            <h3>Cyber Attack Detection System</h3>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="contact"></section>
+    </main>
+  </div>
+  <script src="./Scripts/index.js"></script>
 </body>
 </html>
